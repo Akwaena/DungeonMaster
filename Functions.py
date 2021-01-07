@@ -7,7 +7,27 @@ class Dot:
         self.coord = coord
 
     def __eq__(self, other):
-        return other.collidepoint(self.coord)
+        return self.coord == other.coord
+
+
+class Button:
+    def __init__(self, rect, name, function=None):
+        self.rect = rect
+        self.name = name
+        if function:
+            self.function = function
+
+    def __eq__(self, other):
+        if not other:
+            return False
+        return self.name == other.name
+
+    def connect(self, function):
+        self.function = function
+
 
 def collide_button(buttons, dot):
-    for i in
+    for i in buttons:
+        if i.rect.collidepoint(dot.coord):
+            return i
+    return False
