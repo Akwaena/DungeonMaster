@@ -31,3 +31,28 @@ def collide_button(buttons, dot):
         if i.rect.collidepoint(dot.coord):
             return i
     return False
+
+
+class Game:
+    def __init__(self):
+        pass
+
+
+class FamilyMember:
+    def __init__(self):
+        pass
+
+
+class Hero:
+    def __init__(self):
+        pass
+
+
+class Dungeon:
+    def __init__(self):
+        pass
+
+
+class Room:
+    def __init__(self):
+        pass
