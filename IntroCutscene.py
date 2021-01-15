@@ -88,3 +88,5 @@ while running:
 
 log('IntroCutscene/Покинут главный цикл')
 log('IntroCutscene/Конец программы')
+
+import RaidPreparation
