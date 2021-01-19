@@ -299,7 +299,7 @@ enter_skills_page_button_sprite.image = enter_skills_page_button
 enter_skills_page_button_sprite.rect = enter_skills_page_button_sprite.image.get_rect()
 enter_skills_page_button_sprite.rect.x = 1050
 enter_skills_page_button_sprite.rect.y = 1000
-screen_buttons.append(Functions.Button(enter_skills_page_button_sprite, 'enter', start))
+screen_buttons.append(Functions.Button(enter_skills_page_button_sprite, 'skills', skill_page))
 ####################
 log('RaidPreparations/Подгружены спрайты')
 ####################

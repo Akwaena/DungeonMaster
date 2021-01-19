@@ -173,8 +173,5 @@ log('MainMenu/Конец программы')
 if next_page == 'IntroCutscene':
     import IntroCutscene
     exit(0)
-elif next_page == 'LoadPage':
-    import LoadPage
-    exit(0)
 elif next_page == 'SettingsPage':
     exit(0)
