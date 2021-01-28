@@ -148,7 +148,7 @@ class Dungeon:
         enter_sprite.image = enter
         enter_sprite.rect = enter_sprite.image.get_rect()
         icons.append(enter_sprite)
-        ext = game.image.load('Tools/gen_test_enter.png')
+        ext = game.image.load('Tools/gen_test_exit.png')
         ext_sprite = game.sprite.Sprite()
         ext_sprite.image = ext
         ext_sprite.rect = ext_sprite.image.get_rect()

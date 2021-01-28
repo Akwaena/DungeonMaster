@@ -8,6 +8,7 @@ class Armor:
         self.defence = defence
         self.lvl = lvl
         self.buff = buff
+        self.rare = rare
 
     def absorb_hit(self, dmg, accuracy, player):
         pass

@@ -156,7 +156,7 @@ def start():
 def skill_page():
     global running
     global next_page
-    running = False
+    # running = False
     next_page = 'Skills'
 
 
@@ -335,6 +335,12 @@ while running:
     render()
     game.display.update()
 
+    if next_page == 'Skills':
+        print(123)
+        print(next_page)
+        import SkillPage
+        next_page = None
+
 ##############
 log('RaidPreparation/Покинут главный цикл')
 save.save()
@@ -342,7 +348,4 @@ log('RaidPreparation/Конец программы')
 
 if next_page == 'Dungeon':
     import Dungeon
-    exit(0)
-elif next_page == 'Skills':
-    import SkillPage
     exit(0)

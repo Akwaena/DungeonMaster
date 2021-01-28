@@ -326,6 +326,8 @@ while running:
     render()
     game.display.update()
 
+
 if next_page == 'RaidPreparation':
-    import RaidPreparation
-    exit(0)
+    del screen
+
+

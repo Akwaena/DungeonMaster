@@ -115,8 +115,6 @@ class Save:
         log('Functions/Загружено сохранение')
 
     def save(self):
-        print(self.pocket_food)
-        print(self.stock_food)
         self.cur.execute(f'''UPDATE save SET raids = {self.raids}''')
         self.cur.execute(f'''UPDATE save SET hope = {self.hope}''')
         self.cur.execute(f'''UPDATE save SET xp = {self.xp}''')
@@ -140,6 +138,7 @@ class Save:
         self.cur.execute(f'''UPDATE save SET cat = {self.cat}''')
 
         self.cur.execute(f'''UPDATE save SET events = "{self.events}"''')
+        self.con.commit()
 
         log('Functions/Игра сохранена')
 
@@ -192,21 +191,6 @@ class FamilyMember:
                 return 'мертв'
 
 
-class Hero:
-    def __init__(self):
-        pass
-
-
-class Dungeon:
-    def __init__(self):
-        pass
-
-
-class Room:
-    def __init__(self):
-        pass
-
-
 class Buff:
     def __init__(self, perk, strength):
         self.perk = perk
@@ -214,3 +198,8 @@ class Buff:
 
     def __str__(self):
         return f'{self.strength}% {self.perk}'
+
+
+class Hero:
+    def __init__(self, start_pos, save):
+        pass
