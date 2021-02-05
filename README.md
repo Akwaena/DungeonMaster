@@ -1,2 +1,2 @@
 # DungeonMaster
-2 Project for Yandex.Lyceum
+2nd Project for Yandex.Lyceum
