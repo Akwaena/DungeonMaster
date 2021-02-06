@@ -13,6 +13,7 @@ class Dungeon:
         """
         Генерация подземелья
         """
+        self.rooms.clear()
         self.rooms.append(Room(0, 'enter'))
         insides = ['loot', 'enemy', 'empty', 'loot', 'enemy', 'empty', 'loot', 'enemy', 'empty', 'enemy']
         for i in range(room_num):
